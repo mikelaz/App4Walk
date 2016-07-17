@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Watch4Walk-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Watch4Walk" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch4Walk" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Mostrar Favoritos" id="h3l-i7-AgM">
+                            <connections>
+                                <action selector="mostrarRuta" destination="AgC-eL-Hgc" id="8Zz-Pd-ZDz"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Watch4Walk-->
+        <scene sceneID="zM8-tQ-Jzd">
+            <objects>
+                <controller identifier="controladorMapa" title="Watch4Walk" id="6N7-Hl-nrw" customClass="MapRutaInterfaceController" customModule="Watch4Walk_Extension">
+                    <items>
+                        <map height="114.5" alignment="left" id="86v-Ws-em8"/>
+                        <slider width="1" height="31.5" alignment="left" value="5" maximum="9" steps="10" id="heZ-hR-3Mr">
+                            <connections>
+                                <action selector="zoomMapa:" destination="6N7-Hl-nrw" id="57Q-8F-zx6"/>
+                            </connections>
+                        </slider>
+                    </items>
+                    <connections>
+                        <outlet property="mapaWatch" destination="86v-Ws-em8" id="6Y9-kx-Wzf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="502" y="345"/>
+        </scene>
+    </scenes>
+</document>

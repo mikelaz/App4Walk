@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //@IBAction func salirAMenuPrincipal(segue: UIStoryboardSegue){}
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,14 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA18E6B71D3556D800D68A31 /* QRViewControllerCamara.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18E6B61D3556D800D68A31 /* QRViewControllerCamara.swift */; };
+		DA46CB1B1D3620B100137E46 /* Modelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46CB1A1D3620B100137E46 /* Modelo.swift */; };
+		DA46CB1F1D363A6700137E46 /* NewRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46CB1E1D363A6700137E46 /* NewRouteViewController.swift */; };
+		DA46CB211D3685B000137E46 /* AddFavoritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA46CB201D3685B000137E46 /* AddFavoritoViewController.swift */; };
+		DA4E1BDC1D37A3A100946F90 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4E1BDA1D37A3A100946F90 /* Interface.storyboard */; };
+		DA4E1BDE1D37A3A100946F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4E1BDD1D37A3A100946F90 /* Assets.xcassets */; };
+		DA4E1BE51D37A3A100946F90 /* Watch4Walk Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA4E1BE41D37A3A100946F90 /* Watch4Walk Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA4E1BEC1D37A3A100946F90 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E1BEB1D37A3A100946F90 /* InterfaceController.swift */; };
+		DA4E1BEE1D37A3A100946F90 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E1BED1D37A3A100946F90 /* ExtensionDelegate.swift */; };
+		DA4E1BF21D37A3A100946F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4E1BF11D37A3A100946F90 /* Assets.xcassets */; };
+		DA4E1BF61D37A3A100946F90 /* Watch4Walk.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA4E1BD81D37A3A100946F90 /* Watch4Walk.app */; };
+		DA4E1C001D37A5F600946F90 /* MapRutaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E1BFF1D37A5F600946F90 /* MapRutaInterfaceController.swift */; };
+		DA4E1C021D37C64800946F90 /* Modelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4E1C011D37C64800946F90 /* Modelo.swift */; };
 		DA8978691D33D5F100E87986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8978681D33D5F100E87986 /* AppDelegate.swift */; };
 		DA89786B1D33D5F100E87986 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89786A1D33D5F100E87986 /* ViewController.swift */; };
 		DA89786E1D33D5F100E87986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA89786C1D33D5F100E87986 /* Main.storyboard */; };
 		DA8978701D33D5F100E87986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA89786F1D33D5F100E87986 /* Assets.xcassets */; };
 		DA8978731D33D5F100E87986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8978711D33D5F100E87986 /* LaunchScreen.storyboard */; };
+		DA89787D1D33DDC400E87986 /* NavConRutas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89787C1D33DDC400E87986 /* NavConRutas.swift */; };
+		DA89787F1D33DDD900E87986 /* NavConQR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA89787E1D33DDD900E87986 /* NavConQR.swift */; };
+		DA8978811D33DE5C00E87986 /* RutasViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8978801D33DE5C00E87986 /* RutasViewController1.swift */; };
+		DA8978831D33DE7000E87986 /* QRViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8978821D33DE7000E87986 /* QRViewController1.swift */; };
+		DA8978851D33DE7F00E87986 /* QRViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8978841D33DE7F00E87986 /* QRViewController2.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DA4E1BE61D37A3A100946F90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA89785D1D33D5F000E87986 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4E1BE31D37A3A100946F90;
+			remoteInfo = "Watch4Walk Extension";
+		};
+		DA4E1BF41D37A3A100946F90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA89785D1D33D5F000E87986 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA4E1BD71D37A3A100946F90;
+			remoteInfo = Watch4Walk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA4E1BFC1D37A3A100946F90 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DA4E1BE51D37A3A100946F90 /* Watch4Walk Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4E1BFE1D37A3A100946F90 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DA4E1BF61D37A3A100946F90 /* Watch4Walk.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DA18E6B61D3556D800D68A31 /* QRViewControllerCamara.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewControllerCamara.swift; sourceTree = "<group>"; };
+		DA46CB1A1D3620B100137E46 /* Modelo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modelo.swift; sourceTree = "<group>"; };
+		DA46CB1E1D363A6700137E46 /* NewRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRouteViewController.swift; sourceTree = "<group>"; };
+		DA46CB201D3685B000137E46 /* AddFavoritoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFavoritoViewController.swift; sourceTree = "<group>"; };
+		DA4E1BD81D37A3A100946F90 /* Watch4Walk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch4Walk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4E1BDB1D37A3A100946F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DA4E1BDD1D37A3A100946F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA4E1BDF1D37A3A100946F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4E1BE41D37A3A100946F90 /* Watch4Walk Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch4Walk Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4E1BEA1D37A3A100946F90 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DA4E1BEB1D37A3A100946F90 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DA4E1BED1D37A3A100946F90 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DA4E1BF11D37A3A100946F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA4E1BF31D37A3A100946F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4E1BFF1D37A5F600946F90 /* MapRutaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapRutaInterfaceController.swift; sourceTree = "<group>"; };
+		DA4E1C011D37C64800946F90 /* Modelo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modelo.swift; sourceTree = "<group>"; };
+		DA4E32721D3BDC4C005DEEE6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA8978651D33D5F100E87986 /* App4Walk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App4Walk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8978681D33D5F100E87986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA89786A1D33D5F100E87986 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,9 +99,21 @@
 		DA89786F1D33D5F100E87986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8978721D33D5F100E87986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8978741D33D5F100E87986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA89787C1D33DDC400E87986 /* NavConRutas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavConRutas.swift; sourceTree = "<group>"; };
+		DA89787E1D33DDD900E87986 /* NavConQR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavConQR.swift; sourceTree = "<group>"; };
+		DA8978801D33DE5C00E87986 /* RutasViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RutasViewController1.swift; sourceTree = "<group>"; };
+		DA8978821D33DE7000E87986 /* QRViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController1.swift; sourceTree = "<group>"; };
+		DA8978841D33DE7F00E87986 /* QRViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DA4E1BE11D37A3A100946F90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA8978621D33D5F000E87986 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +124,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA4E1BD91D37A3A100946F90 /* Watch4Walk */ = {
+			isa = PBXGroup;
+			children = (
+				DA4E1BDA1D37A3A100946F90 /* Interface.storyboard */,
+				DA4E1BDD1D37A3A100946F90 /* Assets.xcassets */,
+				DA4E1BDF1D37A3A100946F90 /* Info.plist */,
+			);
+			path = Watch4Walk;
+			sourceTree = "<group>";
+		};
+		DA4E1BE81D37A3A100946F90 /* Watch4Walk Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DA4E1BEB1D37A3A100946F90 /* InterfaceController.swift */,
+				DA4E1BED1D37A3A100946F90 /* ExtensionDelegate.swift */,
+				DA4E1BF11D37A3A100946F90 /* Assets.xcassets */,
+				DA4E1BF31D37A3A100946F90 /* Info.plist */,
+				DA4E1BE91D37A3A100946F90 /* Supporting Files */,
+				DA4E1BFF1D37A5F600946F90 /* MapRutaInterfaceController.swift */,
+				DA4E1C011D37C64800946F90 /* Modelo.swift */,
+			);
+			path = "Watch4Walk Extension";
+			sourceTree = "<group>";
+		};
+		DA4E1BE91D37A3A100946F90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA4E1BEA1D37A3A100946F90 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		DA89785C1D33D5F000E87986 = {
 			isa = PBXGroup;
 			children = (
+				DA4E32721D3BDC4C005DEEE6 /* README.md */,
 				DA8978671D33D5F100E87986 /* App4Walk */,
+				DA4E1BD91D37A3A100946F90 /* Watch4Walk */,
+				DA4E1BE81D37A3A100946F90 /* Watch4Walk Extension */,
 				DA8978661D33D5F100E87986 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				DA8978651D33D5F100E87986 /* App4Walk.app */,
+				DA4E1BD81D37A3A100946F90 /* Watch4Walk.app */,
+				DA4E1BE41D37A3A100946F90 /* Watch4Walk Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,12 +180,21 @@
 		DA8978671D33D5F100E87986 /* App4Walk */ = {
 			isa = PBXGroup;
 			children = (
+				DA18E6B61D3556D800D68A31 /* QRViewControllerCamara.swift */,
 				DA8978681D33D5F100E87986 /* AppDelegate.swift */,
 				DA89786A1D33D5F100E87986 /* ViewController.swift */,
 				DA89786C1D33D5F100E87986 /* Main.storyboard */,
 				DA89786F1D33D5F100E87986 /* Assets.xcassets */,
 				DA8978711D33D5F100E87986 /* LaunchScreen.storyboard */,
 				DA8978741D33D5F100E87986 /* Info.plist */,
+				DA89787C1D33DDC400E87986 /* NavConRutas.swift */,
+				DA89787E1D33DDD900E87986 /* NavConQR.swift */,
+				DA8978801D33DE5C00E87986 /* RutasViewController1.swift */,
+				DA8978821D33DE7000E87986 /* QRViewController1.swift */,
+				DA8978841D33DE7F00E87986 /* QRViewController2.swift */,
+				DA46CB1A1D3620B100137E46 /* Modelo.swift */,
+				DA46CB1E1D363A6700137E46 /* NewRouteViewController.swift */,
+				DA46CB201D3685B000137E46 /* AddFavoritoViewController.swift */,
 			);
 			path = App4Walk;
 			sourceTree = "<group>";
@@ -67,6 +202,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DA4E1BD71D37A3A100946F90 /* Watch4Walk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4E1BFD1D37A3A100946F90 /* Build configuration list for PBXNativeTarget "Watch4Walk" */;
+			buildPhases = (
+				DA4E1BD61D37A3A100946F90 /* Resources */,
+				DA4E1BFC1D37A3A100946F90 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA4E1BE71D37A3A100946F90 /* PBXTargetDependency */,
+			);
+			name = Watch4Walk;
+			productName = Watch4Walk;
+			productReference = DA4E1BD81D37A3A100946F90 /* Watch4Walk.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DA4E1BE31D37A3A100946F90 /* Watch4Walk Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA4E1BFB1D37A3A100946F90 /* Build configuration list for PBXNativeTarget "Watch4Walk Extension" */;
+			buildPhases = (
+				DA4E1BE01D37A3A100946F90 /* Sources */,
+				DA4E1BE11D37A3A100946F90 /* Frameworks */,
+				DA4E1BE21D37A3A100946F90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch4Walk Extension";
+			productName = "Watch4Walk Extension";
+			productReference = DA4E1BE41D37A3A100946F90 /* Watch4Walk Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		DA8978641D33D5F000E87986 /* App4Walk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA8978771D33D5F100E87986 /* Build configuration list for PBXNativeTarget "App4Walk" */;
@@ -74,10 +243,12 @@
 				DA8978611D33D5F000E87986 /* Sources */,
 				DA8978621D33D5F000E87986 /* Frameworks */,
 				DA8978631D33D5F000E87986 /* Resources */,
+				DA4E1BFE1D37A3A100946F90 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DA4E1BF51D37A3A100946F90 /* PBXTargetDependency */,
 			);
 			name = App4Walk;
 			productName = App4Walk;
@@ -94,8 +265,17 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Mikel Aguirre";
 				TargetAttributes = {
+					DA4E1BD71D37A3A100946F90 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5SCD86P4F9;
+					};
+					DA4E1BE31D37A3A100946F90 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5SCD86P4F9;
+					};
 					DA8978641D33D5F000E87986 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5SCD86P4F9;
 					};
 				};
 			};
@@ -113,11 +293,30 @@
 			projectRoot = "";
 			targets = (
 				DA8978641D33D5F000E87986 /* App4Walk */,
+				DA4E1BD71D37A3A100946F90 /* Watch4Walk */,
+				DA4E1BE31D37A3A100946F90 /* Watch4Walk Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DA4E1BD61D37A3A100946F90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4E1BDE1D37A3A100946F90 /* Assets.xcassets in Resources */,
+				DA4E1BDC1D37A3A100946F90 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4E1BE21D37A3A100946F90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4E1BF21D37A3A100946F90 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA8978631D33D5F000E87986 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,18 +330,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DA4E1BE01D37A3A100946F90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4E1C001D37A5F600946F90 /* MapRutaInterfaceController.swift in Sources */,
+				DA4E1BEE1D37A3A100946F90 /* ExtensionDelegate.swift in Sources */,
+				DA4E1BEC1D37A3A100946F90 /* InterfaceController.swift in Sources */,
+				DA4E1C021D37C64800946F90 /* Modelo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA8978611D33D5F000E87986 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA89787D1D33DDC400E87986 /* NavConRutas.swift in Sources */,
+				DA89787F1D33DDD900E87986 /* NavConQR.swift in Sources */,
+				DA8978811D33DE5C00E87986 /* RutasViewController1.swift in Sources */,
 				DA89786B1D33D5F100E87986 /* ViewController.swift in Sources */,
+				DA8978851D33DE7F00E87986 /* QRViewController2.swift in Sources */,
 				DA8978691D33D5F100E87986 /* AppDelegate.swift in Sources */,
+				DA46CB1B1D3620B100137E46 /* Modelo.swift in Sources */,
+				DA46CB211D3685B000137E46 /* AddFavoritoViewController.swift in Sources */,
+				DA18E6B71D3556D800D68A31 /* QRViewControllerCamara.swift in Sources */,
+				DA8978831D33DE7000E87986 /* QRViewController1.swift in Sources */,
+				DA46CB1F1D363A6700137E46 /* NewRouteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DA4E1BE71D37A3A100946F90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4E1BE31D37A3A100946F90 /* Watch4Walk Extension */;
+			targetProxy = DA4E1BE61D37A3A100946F90 /* PBXContainerItemProxy */;
+		};
+		DA4E1BF51D37A3A100946F90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA4E1BD71D37A3A100946F90 /* Watch4Walk */;
+			targetProxy = DA4E1BF41D37A3A100946F90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		DA4E1BDA1D37A3A100946F90 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA4E1BDB1D37A3A100946F90 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		DA89786C1D33D5F100E87986 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -162,6 +402,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DA4E1BF71D37A3A100946F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Watch4Walk_Extension;
+				INFOPLIST_FILE = Watch4Walk/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = MAZ.App4Walk.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		DA4E1BF81D37A3A100946F90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Watch4Walk_Extension;
+				INFOPLIST_FILE = Watch4Walk/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = MAZ.App4Walk.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		DA4E1BF91D37A3A100946F90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Watch4Walk Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MAZ.App4Walk.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		DA4E1BFA1D37A3A100946F90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Watch4Walk Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MAZ.App4Walk.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		DA8978751D33D5F100E87986 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -249,10 +559,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = App4Walk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAZ.App4Walk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,16 +573,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = App4Walk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAZ.App4Walk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA4E1BFB1D37A3A100946F90 /* Build configuration list for PBXNativeTarget "Watch4Walk Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4E1BF91D37A3A100946F90 /* Debug */,
+				DA4E1BFA1D37A3A100946F90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA4E1BFD1D37A3A100946F90 /* Build configuration list for PBXNativeTarget "Watch4Walk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA4E1BF71D37A3A100946F90 /* Debug */,
+				DA4E1BF81D37A3A100946F90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DA8978601D33D5F000E87986 /* Build configuration list for PBXProject "App4Walk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -286,6 +620,7 @@
 				DA8978791D33D5F100E87986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

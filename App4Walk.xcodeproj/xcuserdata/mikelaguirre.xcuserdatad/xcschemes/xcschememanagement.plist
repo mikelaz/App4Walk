@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Watch4Walk.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>DA4E1BD71D37A3A100946F90</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DA8978641D33D5F000E87986</key>
 		<dict>
 			<key>primary</key>
