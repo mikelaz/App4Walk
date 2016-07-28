@@ -24,29 +24,25 @@ class NewRouteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nombreRuta.clearButtonMode = .Always
+        descripcionRuta.clearButtonMode = .Always
 
         // Do any additional setup after loading the view.
     }
 
     @IBAction func añadirNuevaRuta(sender: UIButton) {
         
-        if nombreRuta.text != nil {
-            //eliminamos los espacios en blanco que se hayan podido introducir al inicio y final del string
-            let nombreRutaTrimmed = nombreRuta.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-            if nombreRutaTrimmed != ""{
-                self.delegate?.nuevaRutaDelegateMethod(nombreRutaTrimmed!, descripcionRuta: descripcionRuta.text!)
-                self.dismissViewControllerAnimated(true, completion: nil)
-            }else{
-                nombreRuta.placeholder = "Introduzca Nombre Ruta"
-            }
+        //eliminamos los espacios en blanco que se hayan podido introducir al inicio y final del string
+        let nombreRutaTrimmed = nombreRuta.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        if nombreRutaTrimmed != ""{
+            self.delegate?.nuevaRutaDelegateMethod(nombreRutaTrimmed!, descripcionRuta: descripcionRuta.text!)
+            self.dismissViewControllerAnimated(true, completion: nil)
         }else{
-            nombreRuta.placeholder = "Introduzca Nombre Ruta"
+            let alertController = UIAlertController(title: "Atención", message: "Introduzca un nombre para la ruta", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
-    }
-    
-    
-    @IBAction func cancelarNuevaRuta(sender: UIButton) {
-       self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     

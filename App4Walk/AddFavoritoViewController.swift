@@ -18,8 +18,7 @@ protocol AddFavoritoViewControllerDelegate{
 class AddFavoritoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var nombreFavorito: UITextField!
-    
-    @IBOutlet weak var botonFotoCamara: UIButton!
+    @IBOutlet weak var botonImagen: UIButton!
     
     var delegate: AddFavoritoViewControllerDelegate?
     
@@ -28,44 +27,53 @@ class AddFavoritoViewController: UIViewController, UIImagePickerControllerDelega
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if !UIImagePickerController.isSourceTypeAvailable(.Camera){
-            botonFotoCamara.hidden = true
-        }
+
         miPicker.delegate = self
+        nombreFavorito.clearButtonMode = .Always
     }
 
     @IBAction func añadirNuevoFavorito(sender: UIButton) {
-        if nombreFavorito.text != nil {
-            //eliminamos los espacios en blanco que se hayan podido introducir al inicio y final del string
-            let nombreFavTrimmed = nombreFavorito.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-            if nombreFavTrimmed != ""{
-                self.delegate?.nuevoFavoritoDelegateMethod(nombreFavTrimmed!, fotoFav:fotoFavorito)
-                self.dismissViewControllerAnimated(true, completion: nil)
-            }else{
-                nombreFavorito.placeholder = "Introduzca Nombre Favorito"
-            }
+        //eliminamos los espacios en blanco que se hayan podido introducir al inicio y final del string
+        let nombreFavTrimmed = nombreFavorito.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+        if nombreFavTrimmed != ""{
+            self.delegate?.nuevoFavoritoDelegateMethod(nombreFavTrimmed!, fotoFav:fotoFavorito)
+            self.dismissViewControllerAnimated(true, completion: nil)
         }else{
-            nombreFavorito.placeholder = "Introduzca Nombre Favorito"
+            let alertController = UIAlertController(title: "Atención", message: "Introduzca un nombre para el punto favorito", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
+    }
+    
+
+    @IBAction func incluirImagen() {
+        let selector = UIAlertController(title: "Seleción Origen", message: "Selecione el origen desde el que insertar una imagen", preferredStyle: .Alert)
+        selector.addAction(UIAlertAction(title: "Cancelar", style: .Cancel, handler: nil))
+        if UIImagePickerController.isSourceTypeAvailable(.Camera){
+            let takePictureAction = UIAlertAction(title: "Tomar Foto", style: .Default) { action -> Void in
+                self.miPicker.sourceType = UIImagePickerControllerSourceType.Camera
+                self.presentViewController(self.miPicker, animated: true, completion: nil)
+            }
+            selector.addAction(takePictureAction)
+        }
+        //Create and add a second option action
+        let choosePictureAction = UIAlertAction(title: "Seleccionar de Album", style: .Default) { action -> Void in
+            self.miPicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            self.presentViewController(self.miPicker, animated: true, completion: nil)
+        }
+        selector.addAction(choosePictureAction)
         
-    }
-   
-    @IBAction func cancelarNuevoFavorito(sender: UIButton) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        //Present the AlertController
+        self.presentViewController(selector, animated: true, completion: nil)
     }
     
-    @IBAction func añadirFotoAlbum(sender: UIButton) {
-        miPicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        presentViewController(miPicker, animated: true, completion: nil)
-    }
-    
-    @IBAction func añadirFotoCamara(sender: UIButton) {
-        miPicker.sourceType = UIImagePickerControllerSourceType.Camera
-        presentViewController(miPicker, animated: true, completion: nil)
-    }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         fotoFavorito = image
+        //Si hemos seleccionado una imagen, cambiamos el titulo del boton para que quede reflejado
+        if fotoFavorito != nil{
+            botonImagen.setTitle("Sustituir Imagen", forState: .Normal)
+        }
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
     

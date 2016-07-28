@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="PuntoFavorito" representedClassName="PuntoFavoritoCoreData" syncable="YES">
+        <attribute name="fotoFavorito" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="latitudFavorito" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitudFavorito" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="nombreFavorito" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rutaDeFavorito" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ruta" inverseName="favoritosDeRuta" inverseEntity="Ruta" syncable="YES"/>
+    </entity>
+    <entity name="Ruta" representedClassName="RutaCoreData" syncable="YES">
+        <attribute name="descripcionRuta" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreRuta" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="favoritosDeRuta" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PuntoFavorito" inverseName="rutaDeFavorito" inverseEntity="PuntoFavorito" syncable="YES"/>
+    </entity>
+    <fetchRequest name="existeRuta" entity="Ruta" predicateString="nombreRuta == $nombreConsulta"/>
+    <fetchRequest name="favoritosDeRuta" entity="PuntoFavorito" predicateString="rutaDeFavorito.nombreRuta == $nombreConsulta"/>
+    <elements>
+        <element name="PuntoFavorito" positionX="-522" positionY="123" width="128" height="120"/>
+        <element name="Ruta" positionX="-63" positionY="-18" width="128" height="90"/>
+    </elements>
+</model>

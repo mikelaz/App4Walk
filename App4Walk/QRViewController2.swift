@@ -19,13 +19,11 @@ class QRViewController2: UIViewController {
         let url = NSURL(string: urlRecivida!)
         let request = NSURLRequest(URL: url!)
         vistaNavegador.loadRequest(request)
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
 
     /*
     // MARK: - Navigation

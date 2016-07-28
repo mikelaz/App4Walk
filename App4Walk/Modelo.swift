@@ -33,3 +33,24 @@ class Ruta{
         favoritosRuta.append(puntoInicial)
     }
 }
+
+class Evento{
+    var nombreEvento: String!
+    var tipoEvento: String!
+    var coordenadasEvento: CLLocationCoordinate2D?
+    var municipioEvento: String!
+    var lugarEvento: String!
+    var enlaceEvento: NSURL!
+    var fechaEvento: String!
+    
+    init(nombreEvento:String, tipoEvento:String, municipioEvento: String, lugarEvento: String, fechaEvento: String ,enlaceEvento: NSURL ,coordenadasEvento: CLLocationCoordinate2D?){
+        self.nombreEvento = nombreEvento
+        self.tipoEvento = tipoEvento
+        self.municipioEvento = municipioEvento
+        self.lugarEvento = lugarEvento
+        self.enlaceEvento = enlaceEvento
+        self.coordenadasEvento = coordenadasEvento
+        self.fechaEvento = fechaEvento
+    }
+    
+}

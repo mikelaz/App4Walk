@@ -14,6 +14,8 @@ class QRViewController1: UIViewController, QRViewControllerCamaraDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
     }
     
     func delegateMethod(capturaQR: String){
