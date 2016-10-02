@@ -5,7 +5,7 @@ Aplicación desarrollada como proyecto final de un curso de desarrollo de aplica
 
 A continuación se presentan las funcionalidades de la actual versión.
 
-Funcionalidades presentes en la veersión anterior:
+Funcionalidades presentes en la versión anterior:
 --------------------------------------------------
 
 - Geolocalización del dispositivo
