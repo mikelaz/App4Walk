@@ -32,7 +32,7 @@ https://github.com/DanijelHuis/HDAugmentedReality
 
 En esta versión se ha diseñado una interfaz gráfica sencilla y se han solucionado problemas de estabilidad de la aplicación.
 
-Esta aplicación se libera bajo licencia MIT. Condiciones detalladas en el fichero LICENSE.
+Esta aplicación se libera bajo licencia GNU General Public License Version 3.0. Condiciones detalladas en el fichero LICENSE.
 
 
 Historial versiones:
